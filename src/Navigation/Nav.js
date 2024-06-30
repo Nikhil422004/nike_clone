@@ -1,8 +1,11 @@
 import { FiHeart } from "react-icons/fi";
 import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
 import "./Nav.css";
+import { useSelector } from "react-redux";
 
 function Navigation({ handleInputChange }) {
+  const state = useSelector((state) => state.handleCart);
+  const stateF = useSelector((state) => state.handleFav);
   const handleChange = (event) => {
     handleInputChange(event);
   };
@@ -21,9 +24,11 @@ function Navigation({ handleInputChange }) {
       <div className="profile-container">
         <a href="#">
           <FiHeart className="nav-icons" />
+          Favourites ({stateF.length})
         </a>
         <a href="#">
           <AiOutlineShoppingCart className="nav-icons" />
+          Cart ({state.length})
         </a>
         <a href="#">
           <AiOutlineUserAdd className="nav-icons" />

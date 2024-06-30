@@ -3,6 +3,10 @@ import Navigation from "./Navigation/Nav";
 import Products from "./Products/Products";
 import Recommended from "./Recommended/Recommended";
 import Sidebar from "./Sidebar/Sidebar";
+import Topbar from "./Topbar/Topbar";
+import ProductDetails from "./ProductDetails/ProductDetails";
+
+import { Routes, Route } from "react-router-dom";
 import "./index.css";
 
 import products from "./db/data";
@@ -73,10 +77,24 @@ function App() {
 
   return (
     <>
-      <Sidebar handleChange={handleChange} />
+      <Topbar />
       <Navigation query={query} handleInputChange={handleInputChange} />
-      <Recommended handleClick={handleClick} />
-      <Products result={result} />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Sidebar handleChange={handleChange} />
+              <Recommended handleClick={handleClick} />
+              <Products result={result} />
+            </>
+          }
+        />
+        <Route
+          path="/product/:articleNo"
+          element={<ProductDetails products={products} />}
+        />
+      </Routes>
     </>
   );
 }
