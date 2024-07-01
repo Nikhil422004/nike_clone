@@ -4,10 +4,11 @@ const handleCart = (state = cart, action) => {
   const product = action.payload;
   switch (action.type) {
     case "ADDITEM":
+      console.log(product);
       const exist = state.find((x) => x.articleNo === product.articleNo);
       if (exist) {
         return state.map((x) =>
-          x.id === product.id ? { ...x, qty: x.qty + 1 } : x
+          x.articleNo === product.articleNo ? { ...x, qty: x.qty + 1 } : x
         );
       } else {
         const product = action.payload;
@@ -19,7 +20,6 @@ const handleCart = (state = cart, action) => {
           },
         ];
       }
-      break;
 
     case "DELITEM":
       const dexist = state.find((x) => x.articleNo === product.articleNo);
@@ -30,10 +30,9 @@ const handleCart = (state = cart, action) => {
           x.articleNo === product.articleNo ? { ...x, qty: x.qty - 1 } : x
         );
       }
-      break;
+
     default:
       return state;
-      break;
   }
 };
 

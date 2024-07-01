@@ -5,16 +5,16 @@ export const addCart = (product) => {
   };
 };
 
-export const addFav = (product) => {
+export const delCart = (product) => {
   return {
-    type: "ADDITEMF",
+    type: "DELITEM",
     payload: product,
   };
 };
 
-export const delCart = (product) => {
+export const addFav = (product) => {
   return {
-    type: "DELITEM",
+    type: "ADDITEMF",
     payload: product,
   };
 };

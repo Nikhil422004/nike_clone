@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addCart, addFav } from "../redux/action";
 import { useParams } from "react-router";
 import { Link } from "react-router-dom";
@@ -7,18 +7,8 @@ import { Link } from "react-router-dom";
 import "./ProductDetails.css";
 
 function ProductDetails({ products }) {
-  // const {articleNo} = useParams();
-  // const [product, setProduct] = useState([])
-
-  // useEffect(()=>{
-  //     const getProduct = async () => {
-  //         const response = await fetch(`https://apilink.com/${articleNo}`)
-  //         setProduct(await response.json())
-
-  //     }
-  //     getProduct();
-  // }, [input])
   const { articleNo } = useParams();
+
   const product = products.find((products) => products.articleNo === articleNo);
 
   const dispatch = useDispatch();

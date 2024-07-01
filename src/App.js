@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navigation from "./Navigation/Nav";
 import Products from "./Products/Products";
 import Recommended from "./Recommended/Recommended";
 import Sidebar from "./Sidebar/Sidebar";
 import Topbar from "./Topbar/Topbar";
 import ProductDetails from "./ProductDetails/ProductDetails";
+import Cart from "./components/Cart";
 
 import { Routes, Route } from "react-router-dom";
 import "./index.css";
@@ -12,6 +13,19 @@ import "./index.css";
 import products from "./db/data";
 
 function App() {
+  // const products = useSelector((state) => state);
+
+  // const fetchProducts = async () => {
+  //   const response = await axios
+  //     .get("https://fakestoreapi.com/products")
+  //     .cathch((err) => {
+  //       console.log("err", err);
+  //     });
+  // };
+  // useEffect(() => {
+  //   fetchProducts();
+  // }, []);
+
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [query, setQuery] = useState("");
   const [selectedPriceRange, setSelectedPriceRange] = useState(null);
@@ -94,6 +108,7 @@ function App() {
           path="/product/:articleNo"
           element={<ProductDetails products={products} />}
         />
+        <Route path="/cart" element={<Cart />} />
       </Routes>
     </>
   );

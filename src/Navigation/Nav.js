@@ -1,6 +1,7 @@
 import { FiHeart } from "react-icons/fi";
 import { AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai";
 import "./Nav.css";
+import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 function Navigation({ handleInputChange }) {
@@ -26,10 +27,11 @@ function Navigation({ handleInputChange }) {
           <FiHeart className="nav-icons" />
           Favourites ({stateF.length})
         </a>
-        <a href="#">
+        <Link to="/cart" className="gocartbtn">
           <AiOutlineShoppingCart className="nav-icons" />
           Cart ({state.length})
-        </a>
+        </Link>
+
         <a href="#">
           <AiOutlineUserAdd className="nav-icons" />
         </a>
