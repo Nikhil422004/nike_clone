@@ -17,7 +17,7 @@ const Fav = () => {
   const emptyCart = () => {
     return (
       <div className="empty-cart">
-        <h2>Your Favorites is Empty</h2>
+        <h2>Your Favourites is Empty</h2>
       </div>
     );
   };
@@ -41,7 +41,7 @@ const Fav = () => {
 
   return (
     <div className="cart-container">
-      <h2>Shopping Cart</h2>
+      <h2>Favourites</h2>
       {state.length === 0 && emptyCart()}
       {state.length !== 0 && state.map(cartItems)}
     </div>

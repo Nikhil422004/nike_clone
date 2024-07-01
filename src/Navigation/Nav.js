@@ -32,9 +32,9 @@ function Navigation({ handleInputChange }) {
           Cart ({state.length})
         </Link>
 
-        <a href="#">
+        <Link to="/profile" className="gocartbtn">
           <AiOutlineUserAdd className="nav-icons" />
-        </a>
+        </Link>
       </div>
     </nav>
   );

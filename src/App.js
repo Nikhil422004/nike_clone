@@ -7,6 +7,9 @@ import Topbar from "./Topbar/Topbar";
 import ProductDetails from "./ProductDetails/ProductDetails";
 import Cart from "./components/Cart";
 import Fav from "./components/Fav";
+import Login from "./components/Login";
+import SignUp from "./components/Signup";
+import Profile from "./components/Profile";
 
 import { Routes, Route } from "react-router-dom";
 import "./index.css";
@@ -111,6 +114,9 @@ function App() {
         />
         <Route path="/cart" element={<Cart />} />
         <Route path="/fav" element={<Fav />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </>
   );
