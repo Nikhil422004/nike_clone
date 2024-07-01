@@ -18,11 +18,10 @@ function Cards({ product }) {
             <section className="card-price">
               {product.salePrice ? (
                 <div className="price">
-                  <del>{product.listPrice}</del>
-                  {product.salePrice}
+                  <del>${product.listPrice}</del>${product.salePrice}
                 </div>
               ) : (
-                <div className="price">{product.listPrice}</div>
+                <div className="price">${product.listPrice}</div>
               )}
               <div className="bag">
                 <BsFillBagHeartFill className="bag-icon" />
