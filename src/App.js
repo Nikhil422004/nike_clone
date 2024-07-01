@@ -6,6 +6,7 @@ import Sidebar from "./Sidebar/Sidebar";
 import Topbar from "./Topbar/Topbar";
 import ProductDetails from "./ProductDetails/ProductDetails";
 import Cart from "./components/Cart";
+import Fav from "./components/Fav";
 
 import { Routes, Route } from "react-router-dom";
 import "./index.css";
@@ -109,6 +110,7 @@ function App() {
           element={<ProductDetails products={products} />}
         />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/fav" element={<Fav />} />
       </Routes>
     </>
   );

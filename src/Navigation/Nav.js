@@ -23,10 +23,10 @@ function Navigation({ handleInputChange }) {
       </div>
 
       <div className="profile-container">
-        <a href="#">
+        <Link to="/fav" className="favbtn">
           <FiHeart className="nav-icons" />
           Favourites ({stateF.length})
-        </a>
+        </Link>
         <Link to="/cart" className="gocartbtn">
           <AiOutlineShoppingCart className="nav-icons" />
           Cart ({state.length})
