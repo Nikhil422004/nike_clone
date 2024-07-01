@@ -2,20 +2,31 @@
 
 import React from "react";
 import { useSelector } from "react-redux";
+import "./SignInUp.css";
 
 const Profile = () => {
   const { user } = useSelector((state) => state.user);
 
   if (!user) {
-    return <p>Please Log In to view your Profile</p>;
+    return (
+      <p className="container">
+        <strong>Please Log In to view your Profile</strong>
+      </p>
+    );
   }
 
   return (
-    <div>
+    <>
       <h2>User Profile</h2>
-      <p>Name: {user.name}</p>
-      <p>Email: {user.email}</p>
-    </div>
+      <div className="pcontainer">
+        <p>
+          <strong>Name:</strong> {user.name}
+        </p>
+        <p>
+          <strong>Email:</strong> {user.email}
+        </p>
+      </div>
+    </>
   );
 };
 

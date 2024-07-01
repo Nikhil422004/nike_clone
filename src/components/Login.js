@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { loginUser } from "../redux/action/userActions";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
+import "./SignInUp.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -18,26 +19,30 @@ const Login = () => {
   };
 
   return (
-    <div className="container">
+    <>
       <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email"
-          required
-        />
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
-          required
-        />
-        <button type="submit">Login</button>
-      </form>
-    </div>
+      <div className="scontainer">
+        <form onSubmit={handleSubmit}>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email"
+            required
+          />
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Password"
+            required
+          />
+          <button type="submit" className="btns">
+            Login
+          </button>
+        </form>
+      </div>
+    </>
   );
 };
 

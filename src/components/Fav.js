@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { addFav, delFav } from "../redux/action";
-// import "./Cart.css";
+import "./CartFav.css";
 
 const Fav = () => {
   const state = useSelector((state) => state.handleFav);
@@ -32,7 +32,9 @@ const Fav = () => {
           <h3>{product.productName}</h3>
           <p>${product.salePrice ? product.salePrice : product.listPrice}</p>
           <div className="cart-item-actions">
-            <button onClick={() => handleDel(product)}>Remove</button>
+            <button onClick={() => handleDel(product)} className="btns">
+              Remove
+            </button>
           </div>
         </div>
       </div>
@@ -40,11 +42,13 @@ const Fav = () => {
   };
 
   return (
-    <div className="cart-container">
+    <>
       <h2>Favourites</h2>
-      {state.length === 0 && emptyCart()}
-      {state.length !== 0 && state.map(cartItems)}
-    </div>
+      <div className="cart-container">
+        {state.length === 0 && emptyCart()}
+        {state.length !== 0 && state.map(cartItems)}
+      </div>
+    </>
   );
 };
 

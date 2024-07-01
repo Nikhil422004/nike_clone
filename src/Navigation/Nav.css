@@ -1,11 +1,22 @@
 nav {
     display: flex;
     border-bottom: 2px solid #f3f3f3;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    z-index: 999;
+    padding: 0px;
+    z-index: 10;
     margin-left: 2rem;
+    position: fixed;
+    top: 7%;
+    left: 0;
+    width: -webkit-fill-available;
+    background-color: rgba(255, 255, 255, 0.7);
+
+}
+
+.favbtn,
+.gocartbtn {
+    color: #363636 !important;
 }
 
 input {
@@ -20,8 +31,8 @@ input {
 }
 
 .nav-icons {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-left: 2rem;
+    width: 2rem;
+    height: 2rem;
+    padding: 0rem 2rem;
     color: black;
 }

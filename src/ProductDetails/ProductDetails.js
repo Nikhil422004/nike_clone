@@ -24,33 +24,36 @@ function ProductDetails({ products }) {
   }
 
   return (
-    <div className="container">
-      <img
-        className="card-img"
-        src={product.imageUrl}
-        alt={product.productName}
-      />
-      <h1>{product.productName}</h1>
-      <p>Category: {product.category}</p>
-      {product.salePrice ? (
-        <p className="price">
-          <del>{product.listPrice}</del>
-          {product.salePrice}
-        </p>
-      ) : (
-        <p className="price">{product.listPrice}</p>
-      )}
-      <p>{product.description}</p>
-      <button className="cartbtn" onClick={() => addProduct(product)}>
-        Add to Cart
-      </button>
-      <button className="favbtn" onClick={() => addProductF(product)}>
-        Add to Favourites
-      </button>
-      <Link to="/cart" className="gocartbtn">
-        Go to Cart
-      </Link>
-    </div>
+    <>
+      <div className="container">
+        <img
+          className="image"
+          src={product.imageUrl}
+          alt={product.productName}
+        />
+        <div className="details">
+          <h1>{product.productName}</h1>
+          <h3>Category: {product.category}</h3>
+          {product.salePrice ? (
+            <p className="price">
+              <del>${product.listPrice}</del>${product.salePrice}
+            </p>
+          ) : (
+            <p className="price">${product.listPrice}</p>
+          )}
+          <p>{product.description}</p>
+          <button className="btns" onClick={() => addProduct(product)}>
+            Add to Cart
+          </button>
+          <button className="btns" onClick={() => addProductF(product)}>
+            Add to Favourites
+          </button>
+          <Link to="/cart" className="btns">
+            Go to Cart
+          </Link>
+        </div>
+      </div>
+    </>
   );
 }
 

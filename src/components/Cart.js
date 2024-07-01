@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { addCart, delCart } from "../redux/action";
-// import "./Cart.css";
+import "./CartFav.css";
 
 const Cart = () => {
   const state = useSelector((state) => state.handleCart);
@@ -33,9 +33,13 @@ const Cart = () => {
           <h3>{product.productName}</h3>
           <p>${product.salePrice ? product.salePrice : product.listPrice}</p>
           <div className="cart-item-actions">
-            <button onClick={() => handleDel(product)}>-</button>
+            <button onClick={() => handleDel(product)} className="btns">
+              -
+            </button>
             <span>{product.qty}</span>
-            <button onClick={() => handleAdd(product)}>+</button>
+            <button onClick={() => handleAdd(product)} className="btns">
+              +
+            </button>
           </div>
         </div>
       </div>
@@ -45,18 +49,20 @@ const Cart = () => {
   const checkoutButton = () => {
     return (
       <div className="checkout-button">
-        <button>Proceed to Checkout</button>
+        <button className="btns">Proceed to Checkout</button>
       </div>
     );
   };
 
   return (
-    <div className="cart-container">
+    <>
       <h2>Shopping Cart</h2>
-      {state.length === 0 && emptyCart()}
-      {state.length !== 0 && state.map(cartItems)}
+      <div className="cart-container">
+        {state.length === 0 && emptyCart()}
+        {state.length !== 0 && state.map(cartItems)}
+      </div>
       {state.length !== 0 && checkoutButton()}
-    </div>
+    </>
   );
 };
 

@@ -22,19 +22,16 @@ function Sidebar({ handleChange }) {
   return (
     <>
       <section className="sidebar">
-        <div className="logo-container">
-          <img src="logo.jpg" alt="Nike Logo" height="90px" />
-        </div>
         <div className="accordion">
-          <h2 onClick={toggleCategory}>Category</h2>
+          <h4 onClick={toggleCategory}>Category »</h4>
           {categoryOpen && <Category handleChange={handleChange} />}
         </div>
         <div className="accordion">
-          <h2 onClick={togglePrice}>Price</h2>
+          <h4 onClick={togglePrice}>Price »</h4>
           {priceOpen && <Price handleChange={handleChange} />}
         </div>
         <div className="accordion">
-          <h2 onClick={toggleColors}>Sports and Activities</h2>
+          <h4 onClick={toggleColors}>Sports/Activities »</h4>
           {colorsOpen && <Colors handleChange={handleChange} />}
         </div>
       </section>

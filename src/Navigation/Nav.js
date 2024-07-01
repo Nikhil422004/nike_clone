@@ -13,6 +13,9 @@ function Navigation({ handleInputChange }) {
 
   return (
     <nav>
+      <Link to="/" className="homebtn">
+        <img src="logo.jpg" alt="Nike Logo" height="70px" />
+      </Link>
       <div className="nav-container">
         <input
           type="text"
