@@ -18,3 +18,10 @@ export const addFav = (product) => {
     payload: product,
   };
 };
+
+export const delFav = (product) => {
+  return {
+    type: "DELITEMF",
+    payload: product,
+  };
+};

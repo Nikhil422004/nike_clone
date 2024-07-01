@@ -21,7 +21,7 @@ const handleFav = (stateF = fav, action) => {
       }
       break;
 
-    case "DELITEM":
+    case "DELITEMF":
       const dexist = stateF.find((x) => x.articleNo === product.articleNo);
       if (dexist.qty === 1) {
         return stateF.filter((x) => x.articleNo !== dexist.articleNo);
