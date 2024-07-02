@@ -25,7 +25,7 @@ function Topbar() {
       {user ? (
         <>
           <span>
-            <a href="#" onClick={handleLogout}>
+            <a href="/nike_clone/" onClick={handleLogout}>
               Logout
             </a>
           </span>
