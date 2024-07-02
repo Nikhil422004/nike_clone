@@ -100,7 +100,7 @@ function App() {
       <Navigation query={query} handleInputChange={handleInputChange} />
       <Routes>
         <Route
-          path="/"
+          path="/nike_clone/"
           element={
             <>
               <Sidebar handleChange={handleChange} />
@@ -110,14 +110,14 @@ function App() {
           }
         />
         <Route
-          path="/product/:articleNo"
+          path="/nike_clone/product/:articleNo"
           element={<ProductDetails products={products} />}
         />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/fav" element={<Fav />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/nike_clone/cart" element={<Cart />} />
+        <Route path="/nike_clone/fav" element={<Fav />} />
+        <Route path="/nike_clone/login" element={<Login />} />
+        <Route path="/nike_clone/signup" element={<SignUp />} />
+        <Route path="/nike_clone/profile" element={<Profile />} />
       </Routes>
     </>
   );
