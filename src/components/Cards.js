@@ -6,7 +6,7 @@ function Cards({ product }) {
   return (
     <>
       <section className="card">
-        <Link to={`/product/${product.articleNo}`}>
+        <Link to={`/nike_clone/product/${product.articleNo}`}>
           <img
             className="card-img"
             src={product.imageUrl}
