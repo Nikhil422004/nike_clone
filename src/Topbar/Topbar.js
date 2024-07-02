@@ -30,16 +30,16 @@ function Topbar() {
             </a>
           </span>
           <span>
-            <Link to="/profile">Welcome, {user.name}</Link>
+            <Link to="/nike_clone/profile">Welcome, {user.name}</Link>
           </span>
         </>
       ) : (
         <>
           <span>
-            <Link to="/login">Sign In</Link>
+            <Link to="/nike_clone/login">Sign In</Link>
           </span>
           <span>
-            <Link to="/signup">Sign Up</Link>
+            <Link to="/nike_clone/signup">Sign Up</Link>
           </span>
         </>
       )}

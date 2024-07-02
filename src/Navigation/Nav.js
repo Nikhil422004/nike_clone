@@ -26,16 +26,16 @@ function Navigation({ handleInputChange }) {
       </div>
 
       <div className="profile-container">
-        <Link to="/fav" className="favbtn">
+        <Link to="/nike_clone/fav" className="favbtn">
           <FiHeart className="nav-icons" />
           Favourites ({stateF.length})
         </Link>
-        <Link to="/cart" className="gocartbtn">
+        <Link to="/nike_clone/cart" className="gocartbtn">
           <AiOutlineShoppingCart className="nav-icons" />
           Cart ({state.length})
         </Link>
 
-        <Link to="/profile" className="gocartbtn">
+        <Link to="/nike_clone/profile" className="gocartbtn">
           <AiOutlineUserAdd className="nav-icons" />
         </Link>
       </div>

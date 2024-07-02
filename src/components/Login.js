@@ -15,7 +15,7 @@ const Login = () => {
     dispatch(loginUser({ email, password }));
     setEmail("");
     setPassword("");
-    navigate("/"); // Navigate to home page
+    navigate("/nike_clone/"); // Navigate to home page
   };
 
   return (
