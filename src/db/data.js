@@ -2481,6 +2481,91 @@ const products = [
     imageUrl:
       "https://static.nike.com/a/images/t_default/2a3e6409-fc89-4419-a794-59ab5f1147ef/nikecourt-lite-4-womens-tennis-shoes-Ts6vfM.png",
   },
+  {
+    company: "NIKE",
+    country: "USA",
+    productName: "Nike",
+    articleNo: "NESSD512-730",
+    division: "Men",
+    category: "Clothing",
+    subCategory: "Swimming",
+    listPrice: 66,
+    salePrice: null,
+    currency: "USD",
+    description:
+      'Go from lap practice to a pool party in these men’s swimming shorts. The lightweight twill fabrication, 5" length, and bold Nike logo tape up the sides give a nod to modern styling, while the stretch waistband and internal drawcord are all about performance. Quick-draining, on-seam mesh side pockets and a grommeted back patch pocket keep your essentials close without slowing you down in the water.',
+    url: "https://nike.com/us/t/mens-5-swim-volley-shorts-NKWMbC/NESSD512-730",
+    imageUrl:
+      "https://static.nike.com/a/images/t_default/63301861-fff5-4a2d-985e-dce77ab9a857/mens-5-swim-volley-shorts-NKWMbC.png",
+  },
+  {
+    company: "NIKE",
+    country: "USA",
+    productName: "Nike",
+    articleNo: "NESSD512-380",
+    division: "Men",
+    category: "Clothing",
+    subCategory: "Swimming",
+    listPrice: 66,
+    salePrice: 56.97,
+    currency: "USD",
+    description:
+      'Go from lap practice to a pool party in these men’s swimming shorts. The lightweight twill fabrication, 5" length, and bold Nike logo tape up the sides give a nod to modern styling, while the stretch waistband and internal drawcord are all about performance. Quick-draining, on-seam mesh side pockets and a grommeted back patch pocket keep your essentials close without slowing you down in the water.',
+    url: "https://nike.com/us/t/mens-5-swim-volley-shorts-NKWMbC/NESSD512-380",
+    imageUrl:
+      "https://static.nike.com/a/images/t_default/3c23b642-95fe-4863-be5a-5b4c3eb4277a/mens-5-swim-volley-shorts-NKWMbC.png",
+  },
+  {
+    company: "NIKE",
+    country: "USA",
+    productName: "Nike",
+    articleNo: "NESSD512-480",
+    division: "Men",
+    category: "Clothing",
+    subCategory: "Swimming",
+    listPrice: 66,
+    salePrice: 56.97,
+    currency: "USD",
+    description:
+      'Go from lap practice to a pool party in these men’s swimming shorts. The lightweight twill fabrication, 5" length, and bold Nike logo tape up the sides give a nod to modern styling, while the stretch waistband and internal drawcord are all about performance. Quick-draining, on-seam mesh side pockets and a grommeted back patch pocket keep your essentials close without slowing you down in the water.',
+    url: "https://nike.com/us/t/mens-5-swim-volley-shorts-NKWMbC/NESSD512-480",
+    imageUrl:
+      "https://static.nike.com/a/images/t_default/484a6f44-3e00-40c8-a7e2-3ef4f55a1249/mens-5-swim-volley-shorts-NKWMbC.png",
+  },
+  {
+    company: "NIKE",
+    country: "USA",
+    productName: "Nike Essential",
+    articleNo: "NESSB347-739",
+    division: "Women",
+    category: "Clothing",
+    subCategory: "Swimming",
+    listPrice: 40,
+    salePrice: 34.97,
+    currency: "USD",
+    description:
+      "The Nike Essential Swim Bottom features a high-rise waist that offers a comfortable, supportive feel. Minimal bottom coverage with a high-leg cut that sits above the hips lets you move with limited distractions. This product is made with at least 75% recycled polyester fibers.",
+    url: "https://nike.com/us/t/essential-womens-high-waist-swim-bottom-23nZQ9/NESSB347-739",
+    imageUrl:
+      "https://static.nike.com/a/images/t_default/4ea25fe2-2f95-4ad1-b80d-5c87a9d062db/essential-womens-high-waist-swim-bottom-23nZQ9.png",
+  },
+  {
+    company: "NIKE",
+    country: "USA",
+    productName: "Nike Essential",
+    articleNo: "NESSB347-001",
+    division: "Women",
+    category: "Clothing",
+    subCategory: "Swimming",
+    listPrice: 58,
+    salePrice: null,
+    currency: "USD",
+    description:
+      "The Nike Essential Swim Bottom features a high-rise waist that offers a comfortable, supportive feel. Minimal bottom coverage with a high-leg cut that sits above the hips lets you move with limited distractions. This product is made with at least 75% recycled polyester fibers.",
+    url: "https://nike.com/us/t/essential-womens-high-waist-swim-bottom-23nZQ9/NESSB347-001",
+    imageUrl:
+      "https://static.nike.com/a/images/t_default/6b8b01bc-55aa-48c0-a53b-083b4f9283c4/essential-womens-high-waist-swim-bottom-23nZQ9.png",
+  },
 ];
 
 export default products;
