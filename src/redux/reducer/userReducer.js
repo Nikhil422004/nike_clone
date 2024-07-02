@@ -1,5 +1,3 @@
-// userReducer.js
-
 const initialState = {
   user: JSON.parse(localStorage.getItem("userData")) || null,
   loading: false,

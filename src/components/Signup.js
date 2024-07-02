@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { signUpUser } from "../redux/action/userActions";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom";
 import "./SignInUp.css";
 
 const SignUp = () => {
@@ -10,15 +10,14 @@ const SignUp = () => {
   const [name, setName] = useState("");
   const dispatch = useDispatch();
   const { error } = useSelector((state) => state.user);
-  const navigate = useNavigate(); // Use useNavigate hook instead of useHistory
-
+  const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(signUpUser({ email, password, name }));
     setName("");
     setEmail("");
     setPassword("");
-    navigate("/nike_clone/"); // Navigate to home page
+    navigate("/nike_clone/");
   };
 
   return (
