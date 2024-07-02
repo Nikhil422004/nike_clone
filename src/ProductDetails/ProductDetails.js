@@ -36,7 +36,7 @@ function ProductDetails({ products }) {
           <h3>Category: {product.category}</h3>
           {product.salePrice ? (
             <p className="price">
-              <del>${product.listPrice}</del>${product.salePrice}
+              <del>${product.listPrice} </del> ${product.salePrice}
             </p>
           ) : (
             <p className="price">${product.listPrice}</p>
@@ -48,7 +48,7 @@ function ProductDetails({ products }) {
           <button className="btns" onClick={() => addProductF(product)}>
             Add to Favourites
           </button>
-          <Link to="/cart" className="btns">
+          <Link to="/nike_clone/cart" className="btns">
             Go to Cart
           </Link>
         </div>
