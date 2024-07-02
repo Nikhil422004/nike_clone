@@ -1,0 +1,10 @@
+.scontainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pcontainer {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
