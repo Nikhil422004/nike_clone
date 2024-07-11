@@ -1,4 +1,4 @@
-# nike_clone
+# Nike Clone
 
 ## Overview
 
